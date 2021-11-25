@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  font-size: 1.6rem;
+}
+
+.card {
+  max-width: 40rem;
+  margin: 10% auto;
+  background-color: white;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 1.2rem 1.6rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.img {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.card-text {
+  padding: 0 4.2rem;
+  margin-bottom: 3.2rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+  color: black;
+}
+
+.summary {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.6rem 2.4rem;
+  border-radius: 1.2rem;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.plan-title {
+  color: black;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.change {
+  grid-column: 3/5;
+  justify-self: end;
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  font-weight: 500;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 1.4rem 0;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  box-shadow: 0 1.2rem 1.6rem 1rem hsl(245, 75%, 52%, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4.2rem;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+.btn:hover,
+.btn:active {
+  color: white;
+  background-color: rgb(110, 65, 236);
+}
+
+.change:hover {
+  text-decoration: none;
+  color: rgb(110, 65, 236);
+  font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+  .card-text {
+    padding: 0 3.6rem;
+  }
+}
